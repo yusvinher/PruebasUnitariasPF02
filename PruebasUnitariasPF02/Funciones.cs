@@ -19,5 +19,9 @@ namespace PruebasUnitariasPF02
 
             return factorial;
         }
+        public static bool EsContrasenyaValida(string contrasenya)
+        {
+            return !string.IsNullOrWhiteSpace(contrasenya) && contrasenya.Length >= 8 && contrasenya.Contains("#");
+        }
     }
 }
